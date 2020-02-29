@@ -1,0 +1,26 @@
+word list -> tag list
+tags: quant unit name comment other
+
+learn p(y|x)
+for each x, take max(p(y|x) for all y)
+    |Y| = |tags|**|words|
+dp -> |Y| = |tags|**2 * |words|
+
+
+
+text -> tokens -> parser -> ner -> doc
+
+q u n o
+
+training
+text -> tokens -> entity/tag
+
+
+quant: float, fraction, unicode fraction -> %.3f
+unit: metric, imperial, size, part, whole
+    size: tiny, small, medium, large, huge
+gram, grams, g -> gram
+foot, feet, ft -> foot
+dash, clove, sprig, slice,... -> part
+very small,... -> tiny
+
