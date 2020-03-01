@@ -24,3 +24,15 @@ foot, feet, ft -> foot
 dash, clove, sprig, slice,... -> part
 very small,... -> tiny
 
+ner
+regex 
+spacy pretrained
+spacy custom
+pytorch custom
+tensorflow custom
+
+Data Extraction
+Parsing ingredient data using Named Entity Recognition. 
+Starting with rule-based methods. Limitations at scale: complexity and maintainability.
+Training machine learning models: linear-chain Conditional Random Fields. Performance at scale.
+

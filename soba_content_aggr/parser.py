@@ -14,7 +14,7 @@ def get_ingred(soup):
         if not ingred:
             continue
         break
-    return (ing.get_text() for ing in ingred)
+    return (ing.get_text().strip() for ing in ingred)
 
 def get_ingredients(response):
     """Return generator of ingredient strs from response object."""

@@ -1,14 +1,19 @@
 
-from fraction import Fraction
+from fractions import Fraction
 import locale
 locale.setlocale(locale.LC_NUMERIC, 'en_US.utf8')
+import unicodedata
+
+def ner_model(ingred):
+    """Return (quant, unit, name, comment) from trained model."""
+    return None
 
 ## Quant ##
 
 QUANT = set()
 
 CAST = {float: ValueError, Fraction: ValueError,
-        unicodedata.numeric: TypeError, locale.atof: ValueError]
+        unicodedata.numeric: TypeError, locale.atof: ValueError}
 
 def is_quant(word):
     for cast, error in CAST.items():
